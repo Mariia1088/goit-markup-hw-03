@@ -47,8 +47,6 @@ body {
 
 /* ----------------HEADER------------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -84,7 +82,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding: 32px 0;
   letter-spacing: 0.02em;
+  display: block;
   color: var(--title-color);
 }
 .current {
@@ -107,6 +107,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  padding: 32px 0;
   color: var(--text-color);
 }
 
@@ -114,7 +115,7 @@ body {
 
 .hero {
   background-color: #2f303a;
-  padding: 200px 452px;
+  padding: 200px 0;
 }
 .hero-title {
   font-weight: 900;
@@ -153,6 +154,9 @@ body {
   display: block;
 }
 /* ----------------------------ABOUT------------------- */
+.about {
+  padding-bottom: 0;
+}
 .about-list {
   display: flex;
 }
@@ -224,8 +228,9 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-photo {
-  margin-bottom: 50px;
+.team-figcaption {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-title {
   font-weight: 500;
@@ -246,6 +251,7 @@ body {
 /* ----------------------Footer--------------------------*/
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 .logo-second {
   color: #ffffff;
@@ -284,6 +290,7 @@ body {
 .portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-item:not(:last-child) {
   margin-right: 8px;
@@ -304,7 +311,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   background: #f5f4fa;
-  margin-bottom: 50px;
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
@@ -321,14 +327,17 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .projects-item {
   background: #ffffff;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+  margin-right: 30px;
+  width: 370px;
 }
-
+.projects-item:nth-of-type(3n) {
+  margin-right: 0;
+}
 .project-title:hover,
 .project-title:focus,
 .project-text:hover,
@@ -338,9 +347,8 @@ body {
 .projects-link {
   text-decoration: none;
 }
-
-.project-photo {
-  margin-bottom: 20px;
+.project-signature {
+margin: 20px 24px;
 }
 
 .project-title {
@@ -350,14 +358,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
-  max-width: 322px;
-  margin-right: 24px;
-  margin-left: 24px;
 }
 .project-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 20px;
 }
